@@ -64,7 +64,7 @@ const HomePage = () => {
 
     return (
         <div className=" font-montserrat flex flex-col gap-5">
-            <div className='sticky top-0 backdrop-blur-sm pb-3 px-7 shadow-lg w-full'>
+            <div className='sticky top-0 backdrop-blur-sm pb-3 px-7 shadow-lg w-full pt-4'>
                 <div className="flex items-center justify-between">
                 <p className="text-4xl font-semibold">POKE<span className=' text-orange-500 text-4xl font-semibold'>HUB</span></p>
                     <div>
@@ -79,7 +79,7 @@ const HomePage = () => {
                     className=" p-3 border focus:border-none  border-gray-700 rounded w-full"
                 />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-8 px-10">
                 {filteredPokemon.map((pokemon, index) => (
                     <div key={index} className="pokemon-card border border-gray-600 transition-all p-4 rounded shadow-xl bg-white hover:bg-gray-50 hover:shadow-2xl  duration-300">
                         <img src={pokemon.image} alt={pokemon.name} className="w-full h-48 object-contain mb-4" />

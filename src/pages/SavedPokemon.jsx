@@ -7,7 +7,7 @@ const SavedPokemonPage = () => {
     const { savedPokemon, removePokemon } = useContext(PokemonContext);
 
     return (
-        <div className="container mx-auto p-4 flex flex-col gap-10">
+        <div className="container mx-auto p-4 flex flex-col gap-10 font-montserrat">
             <div className="flex items-center justify-between">
                 <p className="text-4xl font-semibold">POKE<span className=' text-orange-500 text-4xl font-semibold  '>HUB</span></p>
                 <div>
